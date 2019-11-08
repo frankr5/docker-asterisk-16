@@ -11,6 +11,9 @@ WORKDIR /usr/local/src
 RUN wget https://github.com/cisco/libsrtp/archive/v1.5.4.tar.gz
 RUN tar xvzf v1.5.4.tar.gz
 WORKDIR libsrtp-1.5.4
+# Updating config.guess and config.sub to enable a build on amd64 Platform
+RUN wget -O config.guess http://git.savannah.gnu.org/cgit/config.git/plain/config.guess
+RUN wget -O config.sub http://git.savannah.gnu.org/cgit/config.git/plain/config.sub
 RUN ./configure
 RUN make
 RUN make install
