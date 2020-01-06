@@ -1,6 +1,6 @@
 # docker-asterisk-16
 
-Docker container running Asterisk 16.6.2
+Docker container running Asterisk 16.7.0
 
 Asterisk is built from source to be able to have the latest 16 version
 running.
