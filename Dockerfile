@@ -21,9 +21,9 @@ RUN make install
 WORKDIR /usr/local/src
 
 # Getting, Building and Installing Asterisk
-RUN wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16.7.0.tar.gz
-RUN tar xvzf asterisk-16.7.0.tar.gz
-WORKDIR asterisk-16.7.0
+RUN wget https://downloads.asterisk.org/pub/telephony/asterisk/asterisk-16.8.0.tar.gz
+RUN tar xvzf asterisk-16.8.0.tar.gz
+WORKDIR asterisk-16.8.0
 RUN ./configure --with-srtp
 RUN make menuselect.makeopts
 RUN menuselect/menuselect --disable BUILD_NATIVE --enable CORE-SOUNDS-EN-ALAW menuselect.makeopts
