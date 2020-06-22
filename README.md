@@ -1,5 +1,7 @@
 # docker-asterisk-16
 
+![build](https://github.com/frankr5/docker-asterisk-16/workflows/build/badge.svg)
+
 Docker container running Asterisk 16.11.1
 
 Asterisk is built from source to be able to have the latest 16 version
